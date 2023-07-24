@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <link rel="shortcut icon" href="./images/cup.png" type="image/x-icon" />
+    <!-- google fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <!-- DAISY UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
@@ -12,7 +19,18 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- custom colors  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <!-- TAILWIND  -->
     <!DOCTYPE html>
     <html>
@@ -23,9 +41,37 @@
       </head>
     </html>
   </head>
-  <body>
-    <header>
+  <body class="manrope">
+    <header class="conatiner mx-auto">
       <!-- banner section -->
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div class="mt-32">
+            <img src="/images/banner.png" class="max-w-sm" />
+            <div
+              class="flex -mt-20 items-center gap-4 bg-white drop-shadow-lg p-5 w-60"
+            >
+              <img src="./images/star.jpg" alt="" />
+              <div class="">
+                <h3>5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <!-- footer section  -->

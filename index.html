@@ -42,10 +42,10 @@
     </html>
   </head>
   <body class="manrope">
-    <header class="conatiner mx-auto">
+    <header class="container mx-auto">
       <!-- banner section -->
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex flex-col justify-between lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
@@ -56,10 +56,14 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button
+              class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white"
+            >
+              Explore More <img src="images/arrow.png" alt="" />
+            </button>
           </div>
-          <div class="mt-32">
-            <img src="./images/banner.png" class="max-w-sm" />
+          <div class="">
+            <img src="./images/banner.png" />
             <div
               class="flex -mt-20 items-center gap-4 bg-white drop-shadow-lg p-5 w-60"
             >
@@ -314,6 +318,74 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer
+      class="py-10 px-4 lg:px-48 bg-gradient-to-r from-[#FF00001A] to-[#ab95861a]"
+    >
+      <div class="flex justify-between py-24">
+        <img src="images/cup.png" alt="" />
+        <p>
+          <span>Ready to get started?</span>
+          <button
+            class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white"
+          >
+            Get Started
+          </button>
+        </p>
+      </div>
+      <div class="footer p-10 text-base-content">
+        <div>
+          <span class="footer-title">Quick Links</span>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Insurance</a>
+          <a class="link link-hover">Privacy Policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Our Service</span>
+          <a class="link link-hover">Home insurance</a>
+          <a class="link link-hover">Car insurance</a>
+          <a class="link link-hover">Life insurance</a>
+          <a class="link link-hover">Health insurance</a>
+        </div>
+        <div>
+          <span class="footer-title">Help</span>
+          <a class="link link-hover">FAQs</a>
+          <a class="link link-hover">Contact Us</a>
+        </div>
+        <div>
+          <span class="footer-title">Subscribe to our newsletter</span>
+          <div class="form-control w-80">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Email address"
+                class="py-4 border-b-2 text-white border-black outline-none bg-transparent"
+              />
+              <button
+                class="btn absolute top-0 right-0 rounded-full bg-gradient-to-r from-[#F00] to-[#FF8938] text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 320 512"
+                >
+                  ! Font Awesome Free 6.4.0 by @fontawesome -
+                  https://fontawesome.com License -
+                  https://fontawesome.com/license (Commercial License) Copyright
+                  2023 Fonticons, Inc.
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-center p-4 mt-10">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
